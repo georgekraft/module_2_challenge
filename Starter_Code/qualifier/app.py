@@ -24,6 +24,7 @@ from qualifier.filters.credit_score import filter_credit_score
 from qualifier.filters.debt_to_income import filter_debt_to_income
 from qualifier.filters.loan_to_value import filter_loan_to_value
 
+from qualifier.utils.save_qualifying_loans import save_qualifying_loans
 
 def load_bank_data():
     """Ask for the file path to the latest banking data and load the CSV file.
@@ -101,20 +102,6 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
     print(f"Found {len(bank_data_filtered)} qualifying loans")
 
     return bank_data_filtered
-
-
-def save_qualifying_loans(qualifying_loans):
-    """Saves the qualifying loans to a CSV file.
-
-    Args:
-        qualifying_loans (list of lists): The qualifying bank loans.
-    """
-    # @TODO: Complete the usability dialog for savings the CSV Files.
-    csvpath = Path("qualifying_loans.csv")
-    with open(csvpath, 'w', newline='') as csvfile:
-        csvwriter = csv.writer(csvfile)
-        for row in qualifying_loans:
-            csvwriter.writerow(row.values())
 
 
 def run():
