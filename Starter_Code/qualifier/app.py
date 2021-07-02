@@ -118,7 +118,7 @@ def run():
         bank_data, credit_score, debt, income, loan_amount, home_value
     )
 
-    # Save qualifying loans
+    # Save qualifying loans, see module qualifier/utils/save_qualifying_loans.py
     save_qualifying_loans(qualifying_loans)
 
 
