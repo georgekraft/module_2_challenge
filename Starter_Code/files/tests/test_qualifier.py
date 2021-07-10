@@ -21,7 +21,8 @@ from app.py import find_qualifying_loans
 def test_save_csv():
     # @TODO: Your code here!
     # Use Path from pathlib to output the test csv to ./data/output/qualifying_loans.csv
-    assert save_qualifying_loans.save_qualifying_loans
+    # I checked with my tutor and he wasn't sure either how to code this.  Can you please send the solution for me to review?
+    assert save_qualifying_loans.save_qualifying_loans == path('../data/qualifying_loans.csv').exists()
 
 def test_calculate_monthly_debt_ratio():
     assert calculators.calculate_monthly_debt_ratio(1500, 4000) == 0.375
@@ -43,5 +44,5 @@ def test_filters():
 
     # @TODO: Test the new save_csv code!
     # YOUR CODE HERE!
-
-    assert find_qualifying_loans(bank_data, current_credit_score, debt, income, loan, home_value):
+    # I checked with my tutor and he wasn't sure either how to code this.  Can you please send the solution for me to review?
+    assert find_qualifying_loans(bank_data, current_credit_score, debt, income, loan, home_value)
