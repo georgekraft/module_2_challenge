@@ -1,39 +1,33 @@
-# Project Title
+# Loan Qualifier for Consumers
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
+This app allows the creation of a list of bank loans for which a consumer qualifies based on the consumer's information, e.g. such as credit score, monthly income or debt.  
 
 ---
 
 ## Technologies
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+The app was written in python using VScode as editor. A number of libraries were imported into the app incl. sys, fire, questionary, Path, csv. 
 
 ---
 
-## Installation Guide
+## Usage and Examples
 
-In this section, you should include detailed installation notes containing code blocks and screenshots.
+The app is run from app.py and starts by a terminal prompt for the file path from where the bank rates are read from (../data/daily_rate_sheet.csv)
+![Screenshot (8)](https://user-images.githubusercontent.com/85372363/125171791-e930bb00-e16a-11eb-9b35-a2bb0fbb9cb9.png)
 
----
+After the consumer's information (credit score, monthly debt, monthly income, requested loan value, home value) are entered into terminal prompts, 
+the qualifying loans are written into a 'qualifying_loans' csv file (../data/qualifying_loans.csv)
+![Screenshot (9)](https://user-images.githubusercontent.com/85372363/125171952-d1a60200-e16b-11eb-9f69-9fa57f26fe82.png)
 
-## Examples
-
-This section should include screenshots, code blocks, or animations showing how your project works.
-
----
-
-## Usage
-
-This section should include screenshots, code blocks, or animations explaining how to use your project.
 
 ---
 
 ## Contributors
 
-In this section, list all the people who contribute to this project; since you may want to be reached by recruiters or potential collaborators, include your contact e-mail, and optionally your LinkedIn or Twitter profile.
+This was project coded by George Kraft into a code framework provided by a FinTech bootcamp.
 
 ---
 
 ## License
 
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify others what they can and can not do with your source code and files. Use this section to include the licence you want to use.
+This project is public on github under georgekraft/module_2_challenge
